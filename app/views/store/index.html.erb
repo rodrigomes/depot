@@ -4,6 +4,10 @@
 
 <h1>Your Pragmatic Catalog</h1>
 
+<% if session[:cart_id] %>
+	<%= link_to 'My Cart', cart_path(session[:cart_id]) %>
+<% end %>
+
 <% @products.each do |product| %>
   <div class="entry">
     <%= image_tag(product.image_url) %>
@@ -15,3 +19,4 @@
     </div>
   </div>
 <% end %>
+
