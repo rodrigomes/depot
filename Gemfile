@@ -22,6 +22,14 @@ end
 
 gem 'jquery-rails'
 
+gem 'ZenTest'
+
+gem 'autotest-rails'
+
+gem 'autotest-notification'
+
+gem 'autotest-fsevent'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
