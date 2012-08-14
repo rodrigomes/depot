@@ -1,5 +1,5 @@
 class LineItem < ActiveRecord::Base
-  attr_accessible :cart_id, :product_id, :product, :quantity
+  attr_accessible :cart_id, :product_id, :product, :quantity, :cart
   belongs_to :order
   belongs_to :product
   belongs_to :cart
