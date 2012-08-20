@@ -3,7 +3,7 @@
 <% end %>
 
 <div id="maintop">
-  <h1>Your Pragmatic Catalog</h1>
+  <h1><%= t('.title_html') %></h1>
   <%- if session[:cart_id]-%>
 	 <%= link_to 'My Cart', cart_path(session[:cart_id]) %>
   <% end %>
@@ -16,7 +16,7 @@
     <%= sanitize(product.description) %>
     <div class="price_line">
       <span class="price"><%= number_to_currency(product.price) %></span>
-      <%= button_to 'Add to Cart', line_items_path(:product_id => product) %>
+      <%= button_to t('.add_html'), line_items_path(:product_id => product) %>
     </div>
   </div>
 <% end %>
