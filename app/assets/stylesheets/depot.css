@@ -1,4 +1,8 @@
 /* Styles for order form */
+.locale {
+  float:right;
+  padding-top: 0.2em
+}
 .depot_form fieldset {
   background: #efe;
 }
@@ -207,8 +211,8 @@
 }
 
 #store .entry p {
- margin-top: 0.5em; 
- margin-bottom: 0.8em; 
+ margin-top: 0.5em;
+ margin-bottom: 0.8em;
 }
 
 #store .entry .price_line {
